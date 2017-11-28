@@ -76,3 +76,25 @@ header div{
 .container-list .list li .icon-rigth{
     
 }
+
+.chart{
+    box-sizing: border-box;
+    width: 80%;
+    position: absolute;
+    left: 210px;
+    top: 240px;
+    
+    outline: 1px solid red;
+}
+.first-part{   
+    column-count: 4;
+    column-gap: 10px;
+    break-inside: avoid;
+    width: 100%;
+}
+.enrollment, .achievement, .net{
+    margin-left: 5px;
+    outline: 1px solid purple;
+   
+}
+
