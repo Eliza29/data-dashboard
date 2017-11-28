@@ -80,7 +80,6 @@ header div{
 
 }
 
-<<<<<<< HEAD
 .container-list .list li i.icon-rigth{
     float: right;
     margin-left: 10px;
@@ -101,7 +100,7 @@ header div{
 }
 =======
 .container-list .list li .icon-rigth{
-    
+
 }
 
 .chart{
@@ -110,10 +109,10 @@ header div{
     position: absolute;
     left: 210px;
     top: 240px;
-    
+
     outline: 1px solid red;
 }
-.first-part{   
+.first-part{
     column-count: 4;
     column-gap: 10px;
     break-inside: avoid;
@@ -122,7 +121,7 @@ header div{
 .enrollment, .achievement, .net{
     margin-left: 5px;
     outline: 1px solid purple;
-   
+
 }
 
 >>>>>>> 75ef9685184154c8e858662355534bd8772004cd
