@@ -6,6 +6,10 @@
      margin: 0 auto;
      padding: 0;
  }
+ body{
+     font-family: 'Roboto', sans-serif;
+ }
+
 
 .container{
     width: 100%;
@@ -13,14 +17,15 @@
 }
 
 i.profile {
-    float: rigth;
-    color: blue;
+    position: relative;
+    left: 450px;
+    color: #75d9d3; 
+    font-size: 50px;
 }
 
 .icon-rigth {
     color: black;
     font-size: 20px;
-    text-align: right;
 }
 
 header {
@@ -38,14 +43,14 @@ header div{
 }
 
 .container-list{
-    outline: 1px solid red;
-    margin-left: 0;
-    width: 20%;
+    margin:0;
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     line-height: 18px;
 }
 
-.container-list ul {
+.container-list ul{
     list-style: none;
 }
 
@@ -53,14 +58,21 @@ header div{
     width: 100%;
 }
 
-.list{
-    background-color: #ffc107;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
 .container-list .list li a{
     color: black;
     display: block;
     padding: 15px 20px;
+    text-decoration-line: none;
+    background-color: #ffc107;
+}
+
+.container-list .list li a:hover{
+    background-color: #eda412;
+    font: bold 12px;
+    border: 1px solid #eda812;
+
+}
+
+.container-list .list li .icon-rigth{
+    
 }
