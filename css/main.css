@@ -1,3 +1,66 @@
 /*
  * Estilos de tu proyecto
  */
+
+ *{
+     margin: 0 auto;
+     padding: 0;
+ }
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+i.profile {
+    float: rigth;
+    color: blue;
+}
+
+.icon-rigth {
+    color: black;
+    font-size: 20px;
+    text-align: right;
+}
+
+header {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header div{
+    padding: 15px;
+}
+
+.img{
+    width: 300px;
+    height: auto;
+}
+
+.container-list{
+    outline: 1px solid red;
+    margin-left: 0;
+    width: 20%;
+    display: inline-block;
+    line-height: 18px;
+}
+
+.container-list ul {
+    list-style: none;
+}
+
+.container-list .list{
+    width: 100%;
+}
+
+.list{
+    background-color: #ffc107;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.container-list .list li a{
+    color: black;
+    display: block;
+    padding: 15px 20px;
+}
