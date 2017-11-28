@@ -98,30 +98,38 @@ header div{
   background-color: #6495ed;
   color: white;
 }
-=======
-.container-list .list li .icon-rigth{
 
-}
 
 .chart{
     box-sizing: border-box;
     width: 80%;
     position: absolute;
-    left: 210px;
+    left: 260px;
     top: 240px;
-
+    
     outline: 1px solid red;
 }
-.first-part{
-    column-count: 4;
-    column-gap: 10px;
+.first-part{   
+    column-count: 3;
+    column-gap: 20px;
     break-inside: avoid;
     width: 100%;
 }
 .enrollment, .achievement, .net{
-    margin-left: 5px;
-    outline: 1px solid purple;
-
+    width: 70%; 
+}
+.second-part{   
+    width: 100%;
+}
+.circle-bar{
+    position: relative;
+    left:750px ;
+    top:-250px;
+}
+.fourth-part{   
+    column-count: 3;
+    column-gap: 20px;
+    break-inside: avoid;
+    width: 100%;
 }
 
->>>>>>> 75ef9685184154c8e858662355534bd8772004cd
