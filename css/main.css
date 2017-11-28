@@ -19,18 +19,20 @@
 i.profile {
     position: relative;
     left: 450px;
-    color: #75d9d3; 
+    bottom: 15px;
+    color: #318ce7;
     font-size: 50px;
 }
 
 .icon-rigth {
-    color: black;
+    color: white;
     font-size: 20px;
 }
 
 header {
     text-align: center;
     box-sizing: border-box;
+    background-color: #ccccff;
 }
 
 header div{
@@ -44,7 +46,7 @@ header div{
 
 .container-list{
     margin:0;
-    width: 15%;
+    width: 18%;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     line-height: 18px;
@@ -59,20 +61,40 @@ header div{
 }
 
 .container-list .list li a{
-    color: black;
+    color: white;
     display: block;
     padding: 15px 20px;
+    font-size: 18px;
     text-decoration-line: none;
-    background-color: #ffc107;
+    background-color: #003153;
 }
 
-.container-list .list li a:hover{
-    background-color: #eda412;
+.container-list .list li.title a{
+  background-color: #003153;
+}
+
+.container-list .list li.option a:hover{
+    background-color: #6495ed;
+    color: white;
     font: bold 12px;
-    border: 1px solid #eda812;
 
 }
 
-.container-list .list li .icon-rigth{
-    
+.container-list .list li i.icon-rigth{
+    float: right;
+    margin-left: 10px;
+}
+
+.container-list .list ul{
+  display: none;
+}
+
+.container-list .list ul li a{
+  background-color: #424242;
+  color: #e9e9e9;
+}
+
+.container-list .list .active > a {
+  background-color: #6495ed;
+  color: white;
 }
