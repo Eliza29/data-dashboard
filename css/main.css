@@ -80,6 +80,7 @@ header div{
 
 }
 
+<<<<<<< HEAD
 .container-list .list li i.icon-rigth{
     float: right;
     margin-left: 10px;
@@ -98,3 +99,30 @@ header div{
   background-color: #6495ed;
   color: white;
 }
+=======
+.container-list .list li .icon-rigth{
+    
+}
+
+.chart{
+    box-sizing: border-box;
+    width: 80%;
+    position: absolute;
+    left: 210px;
+    top: 240px;
+    
+    outline: 1px solid red;
+}
+.first-part{   
+    column-count: 4;
+    column-gap: 10px;
+    break-inside: avoid;
+    width: 100%;
+}
+.enrollment, .achievement, .net{
+    margin-left: 5px;
+    outline: 1px solid purple;
+   
+}
+
+>>>>>>> 75ef9685184154c8e858662355534bd8772004cd
