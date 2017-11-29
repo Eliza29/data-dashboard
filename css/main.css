@@ -3,133 +3,245 @@
  */
 
  *{
-     margin: 0 auto;
-     padding: 0;
- }
- body{
-     font-family: 'Roboto', sans-serif;
- }
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;  
+}
 
 
 .container{
-    width: 100%;
-    box-sizing: border-box;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 i.profile {
-    position: relative;
-    left: 450px;
-    bottom: 15px;
-    color: #318ce7;
-    font-size: 50px;
+   position: relative;
+   left: 450px;
+   bottom: 15px;
+   color: #318ce7;
+   font-size: 50px;
 }
 
 .icon-rigth {
-    color: white;
-    font-size: 20px;
+   color: white;
+   font-size: 20px;
 }
 
 header {
-    text-align: center;
-    box-sizing: border-box;
-    background-color: #ccccff;
+   text-align: center;
+   box-sizing: border-box;
+   background-color: #ccccff;
 }
 
 header div{
-    padding: 15px;
+   padding: 15px;
 }
 
 .img{
-    width: 300px;
-    height: auto;
+   width: 300px;
+   height: auto;
+}
+.container-list{
+   margin:0;
+   width: 18%;
+   position: fixed;
+   font-family: 'Roboto', sans-serif;
+   display: inline-block;
+   line-height: 18px;
 }
 
-.container-list{
-    margin:0;
-    width: 18%;
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    line-height: 18px;
+/* probando */
+body .topZero{
+   margin-top: 0px;
+   position: fixed;
 }
+/*ddddddd*/
 
 .container-list ul{
-    list-style: none;
+   list-style: none;
 }
 
 .container-list .list{
-    width: 100%;
+   width: 100%;
 }
 
 .container-list .list li a{
-    color: white;
-    display: block;
-    padding: 15px 20px;
-    font-size: 18px;
-    text-decoration-line: none;
-    background-color: #003153;
+   color: white;
+   display: block;
+   padding: 15px 20px;
+   font-size: 18px;
+   text-decoration-line: none;
+   background-color: #003153;
 }
 
 .container-list .list li.title a{
-  background-color: #003153;
+ background-color: #003153;
+ font-weight: bold;
+ font-size: 25px;
 }
 
 .container-list .list li.option a:hover{
-    background-color: #6495ed;
-    color: white;
-    font: bold 12px;
-
+   background-color: #6495ed;
+   color: white;
 }
 
 .container-list .list li i.icon-rigth{
-    float: right;
-    margin-left: 10px;
+   float: right;
+   margin-left: 10px;
 }
 
-.container-list .list ul{
-  display: none;
+.display-none{
+ display: none;
 }
 
 .container-list .list ul li a{
-  background-color: #424242;
-  color: #e9e9e9;
+ background-color: #424242;
+ color: #e9e9e9;
 }
 
 .container-list .list .active > a {
-  background-color: #6495ed;
-  color: white;
+ background-color: #6495ed;
+ color: white;
+ text-decoration-line: none;
+}
+
+section .container-content{
+   margin-left: 18%;
+   width: 82%;
+   padding: 20px;
+   height: auto;
+   display: inline-block;
+   box-sizing: border-box;
+}
+
+ul.submenu{
+   list-style: none;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul.submenu li {
+   display: inline-block;
+   margin-top: 20px;
+   margin-left: 50px;
+}
+
+ul.submenu li a{
+   color: #3c3c3d;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration-line: none;
+}
+
+.border-bottom{
+   border-bottom: 4px solid #003153;
+}
+
+/*contenido*/
+
+.upperCase{
+   text-transform: uppercase;
+}
+
+.container-content .chart{
+   box-sizing: border-box;
+   margin-top: 5%;
+   box-sizing: border-box;
+}
+
+.chart .first-part{   
+   column-count: 3;
+   column-gap: 2px;
+   break-inside: avoid;
+   width: 100%;
+   box-sizing: border-box;
+}
+.first-part .enrollment,.first-part .achievement,.first-part .net{
+   width: 353px;
+   height: 285px;
+   text-align: center;
+   line-height: 30px;
+   box-sizing: border-box;
+   background-color: white;
 }
 
 
-.chart{
-    box-sizing: border-box;
-    width: 80%;
-    position: absolute;
-    left: 260px;
-    top: 240px;
-    
-    outline: 1px solid red;
-}
-.first-part{   
-    column-count: 3;
-    column-gap: 20px;
-    break-inside: avoid;
-    width: 100%;
-}
-.enrollment, .achievement, .net{
-    width: 70%; 
-}
-.second-part{   
-    width: 100%;
-}
-.circle-bar{
-    position: relative;
-    left:750px ;
-    top:-250px;
-}
-.fourth-part{   
-    column-count: 3;
-    column-gap: 20px;
-    break-inside: avoid;
-    width: 100%;
+.chart .second-part{ 
+   margin-top: 5%;  
+   width: 100%;
+   column-count: 2;
+   column-gap: 2px;
+   break-inside: avoid;
+   box-sizing: border-box;
 }
 
+.second-part .teachSkills, .second-part .circle-bar{
+   text-align: center;
+   align-content: center;
+   line-height: 30px;
+   box-sizing: border-box;
+   background-color: white;
+}
+
+.select {
+   border-right: none;
+   border-top: none;
+   border-left: none;
+   border-bottom: 2px solid black;
+   margin-top: 5%;
+}
+
+.second-part .circle-bar{
+   padding-top: 15%;
+   padding-left: 7%;
+}
+
+div.boxContent{
+   margin-top: 3%;
+   margin-bottom: 3%;
+   display: block;
+   font-size: 12px;
+}
+
+.chart .third-part{ 
+   margin-top: 5%;  
+   width: 100%;
+   column-count: 2;
+   column-gap: 2px;
+   break-inside: avoid;
+   box-sizing: border-box;
+}
+
+.third-part .lifeSkills, .third-part .circle-bar{
+   text-align: center;
+   align-content: center;
+   line-height: 30px;
+   box-sizing: border-box;
+   background-color: white;
+}
+
+.third-part .circle-bar{
+   padding-top: 15%;
+   padding-left: 7%;
+}
+
+
+.chart .fourth-part{ 
+   margin-top: 5%;  
+   column-count: 3;
+   column-gap: 2px;
+   break-inside: avoid;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.fourth-part .student-satisfaction,.fourth-part .teacher,.fourth-part .jedi-master{
+   width: 355px;
+   height: 260px;
+   text-align: center;
+   line-height: 30px;
+   box-sizing: border-box;
+   background-color: white;
+}

@@ -21,9 +21,9 @@
     <section>
       <div class="container-list">
         <ul class="list">
-          <li class="title"><a href="#"><b>Sedes</b></a></li>
-          <li class="option"><a href="#">Lima<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
-            <ul>
+          <li class="title"><a href="#">Sedes</a></li>
+          <li class="option" id="lima"><a href="#">Lima<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
+            <ul id="limYearProm" class="display-none">
               <li class="option"><a href="#">2015 - I</a></li>
               <li class="option"><a href="#">2015 - II</a></li>
               <li class="option"><a href="#">2016 - I</a></li>
@@ -31,8 +31,8 @@
               <li class="option"><a href="#">2017 - I</a></li>
               <li class="option"><a href="#">2017 - II</a></li>
             </ul>
-          <li class="option"><a href="#">Arequipa<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
-            <ul>
+          <li class="option" id="arequipa"><a href="#">Arequipa<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
+            <ul id="areYearProm" class="display-none">
               <li class="option"><a href="#">2015 - I</a></li>
               <li class="option"><a href="#">2015 - II</a></li>
               <li class="option"><a href="#">2016 - I</a></li>
@@ -40,8 +40,8 @@
               <li class="option"><a href="#">2017 - I</a></li>
               <li class="option"><a href="#">2017 - II</a></li>
             </ul>
-          <li class="option"><a href="#">Ciudad de Mexico<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
-            <ul>
+          <li class="option" id="mexico"><a href="#">Ciudad de Mexico<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
+            <ul id="mexYearProm" class="display-none">
               <li class="option"><a href="#">2015 - I</a></li>
               <li class="option"><a href="#">2015 - II</a></li>
               <li class="option"><a href="#">2016 - I</a></li>
@@ -49,8 +49,8 @@
               <li class="option"><a href="#">2017 - I</a></li>
               <li class="option"><a href="#">2017 - II</a></li>
             </ul>
-          <li class="option"><a href="#">Santiago de Chile<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
-            <ul>
+          <li class="option" id="chile"><a href="#">Santiago de Chile<i class="icon-rigth fa fa-chevron-down" aria-hidden="true"></i></a></li>
+            <ul id="chilYearProm" class="display-none">
               <li class="option"><a href="#">2015 - I</a></li>
               <li class="option"><a href="#">2015 - II</a></li>
               <li class="option"><a href="#">2016 - I</a></li>
@@ -60,144 +60,154 @@
             </ul>
         </ul>
       </div>
-      <div class="container content">
-      </div>
-    </section>
-    <section class="chart" id="chart-js">
-      <div class="first-part">
-        <div class="enrollment">
-          <h3>ENROLLMENT</h3>
-          <div>
-            <span>120</span>
-            <span>#estudiantes actualmente matriculados</span>
-           </div>
-           <div>
-             <span>20%</span>
-             <span>%retirados</span>
-           </div>
-           <img src="assets/images/bar-graph.png" alt="bar">
+      <div class="container-content">
+        <div>
+          <nav>
+            <ul class="submenu">
+              <li id="overview"></i><a href="#" class="border-bottom">OVERVIEW</a></li>
+              <li id="students"><a href="#">STUDENTS</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="Achievement">
-            <h3>ACHIEVEMENT</h3>
-            <div>
-                <span>105</span>
-                <span>#estudiantes que alcanzaron el objetivo</span>
-            </div>
-            <div>
-              <span>20% </span>
-              <span>% del total</span>
-            </div>  
-            <img src="assets/images/bar-graph.png" alt="bar">
-         </div>
-         <div class="net">
-              <h3>NET PROMOTER SCORE</h3>
-              <div>
-                <span></span>
-                <span>% acumulativo nsp</span>
+        <div class="chart" id="chart-js">
+          <div class="first-part">
+            <div class="enrollment">
+              <h3>ENROLLMENT</h3>
+              <div class="boxContent">
+                <span>120</span>
+                <span class="upperCase"># students currently enrolled</span>
               </div>
-              <div>
-                  <span></span><span>Promovidos</span>
-                  <span></span><span>pasivos</span>
-                  <span></span><span>desertores</span>
-                  
+              <div class="boxContent">
+                <span>20%</span>
+                <span class="upperCase">% dropout</span>
               </div>
               <img src="assets/images/bar-graph.png" alt="bar">
-         </div>
-        
-      </div>
-      <div class="second-part">
-        <div>
-          <h2>TECH SKILLS</h2>
-          <select name="tech" id="tech-skills">
-            <option value="">COMMON CORE</option>
-            <h4>COMMON CORE</h4>
-           <option value="s1">Sprint1:Create an interactive site</option>
-           <option value="s2">Sprint2:Create an interactive site</option>
-           <option value="s3">Sprint3:Create an interactive site</option>
-           <option value="s4">Sprint4:Create an interactive site</option>
-           <option value="">JAVASCRIPT</option>
-           <option value="s5-js">Sprint5:Create an interactive site</option>
-           <option value="s6-js">Sprint6:Create an interactive site</option>
-           <option value="s7-js">Sprint7:Create an interactive site</option>
-           <option value="s8-js">Sprint8:Create an interactive site</option>
-           <option value="">UX-DESIGNER</option>
-           <option value="s5-ux">Sprint5:Create an interactive site</option>
-           <option value="s6-ux">Sprint6:Create an interactive site</option>
-           <option value="s7-ux">Sprint7:Create an interactive site</option>
-           <option value="s8-ux">Sprint8:Create an interactive site</option>
-          </select>
-          <div>
-            <span>90</span><span># estudiantes que alcanzaron el objetivo</span>
-          </div>
-          <div>
-            <span>62</span><span>% del total</span>
-          </div>
-          <img src="assets/images/rectangular-graphic.png" alt="rectangular">
-        </div>
-        <div class="circle-bar">
-          <img src="assets/images/circle-graphic.png" alt="circle">
-        </div>
-      </div>
-      <div class="third-part">
-          <div>
-              <h2>LIFE SKILLS</h2>
-              <select name="" id="">
-               <option value="">sprint1</option>
-               <option value="">sprint2</option>
-               <option value="">sprint3</option>
-               <option value="">sprint4</option>
-              </select>
-              <div>
-                <span>80</span><span># promedio</span>
+            </div>
+            <div class="achievement">
+              <h3>ACHIEVEMENT</h3>
+              <div class="boxContent">
+                <span>105</span>
+                <span class="upperCase"># students that meet the target</span>
               </div>
-              <div>
-                <span>62</span><span>% de estudiantes que alcanzaron el objetivo</span>
+              <div class="boxContent">
+                <span>20% </span>
+                <span class="upperCase">% of total</span>
+              </div>  
+                <img src="assets/images/bar-graph.png" alt="bar">
+            </div>             
+            <div class="net">
+              <h3>NET PROMOTER SCORE</h3>
+              <div class="boxContent">
+                <span></span>
+                <span class="upperCase">% comulative nps</span>
+              </div>
+              <div class="boxContent">
+                <span></span><span class="upperCase">promoters</span>
+                <span></span><span class="upperCase">passive</span>
+                <span></span><span class="upperCase">detractors</span>  
+              </div>
+              <img src="assets/images/bar-graph.png" alt="bar">            
+            </div>      
+          </div>
+          <div class="second-part">
+            <div class="teachSkills">
+              <h2>TECH SKILLS</h2>
+              <select name="tech" id="tech-skills" class="select" >
+                <option value="">COMMON CORE</option>
+                <h4>COMMON CORE</h4>
+                <option value="s1">Sprint1:Create an interactive site</option>
+                <option value="s2">Sprint2:Create an interactive site</option>
+                <option value="s3">Sprint3:Create an interactive site</option>
+                <option value="s4">Sprint4:Create an interactive site</option>
+                <option value="">JAVASCRIPT</option>
+                <option value="s5-js">Sprint5:Create an interactive site</option>
+                <option value="s6-js">Sprint6:Create an interactive site</option>
+                <option value="s7-js">Sprint7:Create an interactive site</option>
+                <option value="s8-js">Sprint8:Create an interactive site</option>
+                <option value="">UX-DESIGNER</option>
+                <option value="s5-ux">Sprint5:Create an interactive site</option>
+                <option value="s6-ux">Sprint6:Create an interactive site</option>
+                <option value="s7-ux">Sprint7:Create an interactive site</option>
+                <option value="s8-ux">Sprint8:Create an interactive site</option>
+              </select>
+              <div class="boxContent">
+                <div>
+                  <span>90</span><span class="upperCase"># Students that meet the target</span>
+                </div>
+                <div>
+                  <span>62</span><span class="upperCase">% of total</span>
+                </div>
               </div>
               <img src="assets/images/rectangular-graphic.png" alt="rectangular">
             </div>
             <div class="circle-bar">
               <img src="assets/images/circle-graphic.png" alt="circle">
+              <div class="boxContent">
+                <p class="upperCase"># Students that meet the target</p>
+                <p class="upperCase"># Students that don't meet the target</p>
+              </div>
             </div>
           </div>
-      </div>
-      <div class="fourth-part">
-          <div class="student-satisfaction">
-              <h3>STUDENT SATISFACTION</h3>
+          <div class="third-part">
+            <div class="lifeSkills">
+              <h2>LIFE SKILLS</h2>
+                <select name="" id="" class="select">
+                  <option value="">sprint1</option>
+                  <option value="">sprint2</option>
+                  <option value="">sprint3</option>
+                  <option value="">sprint4</option>
+                </select>
+                <div class="boxContent">
                   <div>
-                      <span>140</span>
-                      <span>Conocen o exceden </span>
-                      <span>las expectativas(accumulativa) </span>         
+                    <span>80</span><span class="upperCase"># promedio</span>
                   </div>
-                  <img src="assets/images/graph.png" alt="graph">
-            </div>
-
-                    
-            <div class="teacher">
-                <h3>TEACHER RATING</h3>
-                <div>
-                    <span>4.2</span>
-                    <span>Teacher Rating</span>
-                    <span>% acumulativo </span>
+                  <div>
+                    <span>62</span><span class="upperCase">% of students that meet the target</span>
+                  </div>
                 </div>
-                  
-                <img src="assets/images/graph.png" alt="graph">
-             </div>
-             <div class="jedi-master">
-                  <h3>JEDI MASTER RATING</h3>
-                  <div>
-                    <span>50</span>
-                    <span>Jedi Rating</span>
-                    <span>% acumulativo </span>
+                  <img src="assets/images/rectangular-graphic.png" alt="rectangular">
+            </div>
+                <div class="circle-bar">
+                  <img src="assets/images/circle-graphic.png" alt="circle">
+                  <div class="boxContent">
+                    <p class="upperCase"># Students that meet the target</p>
+                    <p class="upperCase"># Students that don't meet the target</p>
                   </div>
-                 
-                  <img src="assets/images/graph.png" alt="graph">
-             </div>
-            
+                </div>
           </div>
+          <div class="fourth-part">
+            <div class="student-satisfaction">
+              <h3>STUDENT SATISFACTION</h3>
+              <div class="upperCase boxContent">
+                <span>140</span>
+                <span>% meeting or exceeding </span>
+                <span>expectations (cumulative) </span>       
+              </div>
+                <img src="assets/images/graph.png" alt="graph">
+            </div>        
+            <div class="teacher">
+              <h3>TEACHER RATING</h3>
+              <div class="upperCase boxContent">
+                <span>4.2</span>
+                <span>Teacher Rating</span>
+                <span>% (cumulative) </span>
+              </div>
+                <img src="assets/images/graph.png" alt="graph">
+              </div>
+              <div class="jedi-master">
+                <h3>JEDI MASTER RATING</h3>
+                <div class="upperCase boxContent">
+                  <span>50</span>
+                  <span>overall Jedi Rating</span>
+                  <span>% (cumulative) </span>
+                </div>
+                  <img src="assets/images/graph.png" alt="graph">
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </section>
-
-
 
 
     <!--google chart-->
