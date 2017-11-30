@@ -1,10 +1,6 @@
 /*
  * Funcionalidad de tu producto
- */
-
-// Puedes hacer uso de la base de datos a través de la variable `data`
-// console.log(data);
-
+*/
 window.addEventListener('load', function() {
 
   var lima = document.getElementById('lima');
@@ -41,7 +37,6 @@ window.addEventListener('load', function() {
   });
    
   /* Seleccionando Promo lima*/
-
   var lim1 = document.getElementById('lim-20162');
   var lim2 = document.getElementById('lim-20171');
   var lim3 = document.getElementById('lim-20172');
@@ -49,7 +44,9 @@ window.addEventListener('load', function() {
   limYearProm.addEventListener('click', selectionPromo);
   function selectionPromo(){
     if(lim1){
+      enrollmentDiv.textContent = ""; 
       numberEnrollment(limStudents1);
+      numberDropout(limStudents1)
     }
     else if(lim2){
       numberEnrollment(limStudents2);
@@ -84,14 +81,15 @@ window.addEventListener('load', function() {
    }
  }
  /*Seleccionando promo Chile*/
- var chile1 = document.getElementById('chile2016');
- var chile2 = document.getElementById('chile20171');
- var chile3 = document.getElementById('chile20172');
+ var chile1 = document.getElementById('chile-2016');
+ var chile2 = document.getElementById('chile-20171');
+ var chile3 = document.getElementById('chile-20172');
  
  chilYearProm.addEventListener('click', selectionPromo);
  function selectionPromo(){
    if(chile1){
      numberEnrollment(chileStudents1);
+     
    }
    else if(chile2){
      numberEnrollment(chileStudents2);
@@ -100,7 +98,6 @@ window.addEventListener('load', function() {
     numberEnrollment(chileStudents3);
   }
  }
-
    /* Variables Promo Lima*/
    var limStudents1 = data["LIM"]["2016-2"]['students'];
    var limStudents2 = data["LIM"]["2017-1"]['students'];
@@ -118,10 +115,12 @@ window.addEventListener('load', function() {
    var chileStudents1 = data["SCL"]["2016-2"]['students'];
    var chileStudents2 = data["SCL"]["2017-1"]['students'];
    var chileStudents3 = data["SCL"]["2017-2"]['students'];
-  /* Obteniendo datos de alumnos matriculados*/
-  var enrollmentDiv = document.getElementById('enrollment-div').children[0];
-  var counter = 0;
   
+   /* Obteniendo datos de alumnos matriculados*/
+  var enrollmentDiv = document.getElementById('enrollment-div').children[0];
+  var dropout = document.getElementById('dropout').children[0];
+ 
+  var counter = 0; 
   function numberEnrollment(numberStudents) {
     for (var i = 0; i < numberStudents.length; i++) {
       if (numberStudents[i]['active'] === true) {
@@ -142,10 +141,9 @@ window.addEventListener('load', function() {
       var percentage = (counterDropout / numberStudents.length) * 100; 
       percentage + '%';   
     } 
-    console.log(counterDropout);
+    dropout.textContent = counterDropout; 
     console.log(percentage + '%');
   };
-  numberDropout(aqpStudents1);
 });
   
   
