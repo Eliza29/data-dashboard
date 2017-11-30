@@ -11,9 +11,10 @@ window.addEventListener('load', function() {
   var arequipa = document.getElementById('arequipa');
   var mexico = document.getElementById('mexico');
   var chile = document.getElementById('chile');
-      
-  var sedes = [ lima, arequipa, mexico, chile];
-  var promos = ['limYearProm', 'areYearProm', 'mexYearProm','chilYearProm'];
+  var limYearProm = document.getElementById('limYearProm');
+  var areYearProm = document.getElementById('areYearProm');
+  var mexYearProm = document.getElementById('mexYearProm');
+  var chilYearProm = document.getElementById('chilYearProm');    
   
   lima.addEventListener('click', function(event) {
     event.preventDefault;
@@ -21,12 +22,6 @@ window.addEventListener('load', function() {
     limYearProm.classList.toggle('display-none');
   });
   
-  var limYearProm = document.getElementById('limYearProm');
-  var areYearProm = document.getElementById('areYearProm');
-  var mexYearProm = document.getElementById('mexYearProm');
-  var chilYearProm = document.getElementById('chilYearProm');
-  
-
   arequipa.addEventListener('click', function(event) {
     event.preventDefault;
     arequipa.classList.toggle('active');
@@ -44,17 +39,46 @@ window.addEventListener('load', function() {
     chile.classList.toggle('active');
     chilYearProm.classList.toggle('display-none');
   });
+  /* Seleccionando Promo*/
+  var lim1 = document.getElementById('lim-20162');
+  lim1.addEventListener('click', selectionPromo);
+  function selectionPromo(event){
+    event.preventDefault;
+    numberEnrollment(limStudents1);
+    enrollmentDiv.textContent = counter;   
+  }
 
-  /* Obteniendo datos de alumnos matriculados arequipa 2016-2 */
+  var lim2 = document.getElementById('lim-20171');
+  lim2.addEventListener('click', selectionPromo);
+  function selectionPromo(event){
+    event.preventDefault;
+    numberEnrollment(aqpStudents1);
+    enrollmentDiv.textContent = counter;   
+  }
+
+  /* Obteniendo datos de alumnos matriculados*/
   var enrollmentDiv = document.getElementById('enrollment-div').children[0];
   
-
   var counter = 0;
-  var aqpStudents = data['AQP']['2016-2']['students'];
-  var limStudents = data[''] 
+  /* Promo Lima*/
+  var limStudents1 = data['LIM']['2016-2']['students'];
+  var limStudents2 = data["LIM"]["2017-1"]['students'];
+  var limStudents3 = data["LIM"]["2017-2"]['students'];
+
+  /* Promo Arequipa*/
+  var aqpStudents1 = data['AQP']['2016-2']['students'];
+  var aqpStudents2 = data["AQP"]["2017-1"]['students'];
+
+  /* Promo Mexico*/
+  var cdmxStudents1 = data["CDMX"]["2017-1"]['students'];
+  var cdmxStudents2 = data["CDMX"]["2017-2"]['students'];
+  
+  /* Promo Chile*/
+  var chileStudents1 = data["CDMX"]["2017-1"]['students'];
+  
+  
   
   function numberEnrollment(numberStudents) {
-  
     for (var i = 0; i < numberStudents.length; i++) {
       if (numberStudents[i]['active'] === true) {
         counter++;
@@ -62,10 +86,8 @@ window.addEventListener('load', function() {
     } 
     console.log(counter); 
   };
-  numberEnrollment(aqpStudents);
-  enrollmentDiv.textContent = counter;
 
-  var counterDropout = 0;
+ var counterDropout = 0;
   function numberDropout(numberStudents) {
     for (var i = 0; i < numberStudents.length; i++) {
       if (numberStudents[i]['active'] === false) {
@@ -77,7 +99,7 @@ window.addEventListener('load', function() {
     console.log(counterDropout);
     console.log(percentage + '%');
   };
-  numberDropout(aqpStudents);
+  numberDropout(aqpStudents1);
 });
   
   
