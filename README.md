@@ -6,20 +6,14 @@
 
 ***
 
-## Flujo de trabajo
+## __INTRODUCCIÓN__
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+El trabajo consiste en hacer un data dashboard para __Laboratoria__, usando nuestros conocimientos sobre HTML, CSS y javascript.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+![](assets/images/dashboard.png)
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+### __INTEGRANTES__
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+1. Elizabeth Segura Ferry
+2. Melissa Nataly Ortiz
